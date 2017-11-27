@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "375768020319",
+    "firebase_url": "https://vteamapp-39736.firebaseio.com",
+    "project_id": "vteamapp-39736",
+    "storage_bucket": "vteamapp-39736.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:375768020319:android:7f4396c2a6806b59",
+        "android_client_info": {
+          "package_name": "com.example.phuongbka.vteamapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "375768020319-r7nd51arf9lip0pm1or48d4nmk1uuesf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.phuongbka.vteamapp",
+            "certificate_hash": "dd1d390df4cec68cee8b15e7dadea8f474cf8733"
+          }
+        },
+        {
+          "client_id": "375768020319-4isii84lm7cb650gv3anidekpuhkt583.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFkKmmCuq7GA3B0-lQ_cnXNIGG_vtgYbM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "375768020319-4isii84lm7cb650gv3anidekpuhkt583.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

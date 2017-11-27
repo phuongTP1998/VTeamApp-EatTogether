@@ -4,66 +4,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
     tools:context="com.example.phuongbka.vteamapp.MainActivity">
 
-    <ImageView
+    <devlight.io.library.ntb.NavigationTabBar
+        android:id="@+id/ntb"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/backgroundhint" />
+        android:layout_height="40dp"
+        app:ntb_active_color="#fff"
+        app:ntb_badge_gravity="top"
+        app:ntb_icon_size_fraction="0.5"
+        app:ntb_inactive_color="#000" />
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
-        android:elevation="10dp"
-        android:background="@drawable/vteam" />
-
-
-    <include
-        android:id="@+id/input_field"
-        layout="@layout/login"
+    <android.support.design.widget.TabLayout
+        android:layout_below="@id/ntb"
+        android:visibility="gone"
+        android:id="@+id/tab_layout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"></include>
+        android:layout_height="40dp"
+        android:background="#c8c8c9"
+        app:tabSelectedTextColor="#e66d6d"
+        app:tabTextColor="#7c6854"/>
 
-    <Button
-        android:id="@+id/bt_login"
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_below="@id/tab_layout"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_below="@+id/input_field"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:background="@drawable/button_login_ripple"
-        android:clickable="true"
-        android:elevation="10dp"
-        android:text="LOGIN"
-        android:textColor="@color/white"
-        android:textSize="18sp" />
-
-    <Button
-        android:id="@+id/bt_register"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_below="@+id/bt_login"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="10dp"
-        android:clickable="true"
-        android:background="@drawable/button_register_ripple"
-        android:elevation="10dp"
-        android:text="REGISTER"
-        android:textColor="@color/register"
-        android:textSize="18sp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="10dp"
-        android:text="Forgot your account?"
-        android:textColor="@color/white" />
-
+        android:layout_height="match_parent"/>
 </RelativeLayout>
